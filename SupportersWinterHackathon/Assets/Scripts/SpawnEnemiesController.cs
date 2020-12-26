@@ -21,7 +21,7 @@ public class SpawnEnemiesController : MonoBehaviour
         zMin = -10;
         zMax = 10;
         gap = 1;
-        numberOfEnemies = 10;
+        numberOfEnemies = 5;
         StartCoroutine(StartSpawning());
     }
 
