@@ -5,7 +5,7 @@ public class EnemyMove : MonoBehaviour
 {
     public GameObject player;
     public Rigidbody rb;
-    public float speed = 0.1f;
+    public float speed = 0.001f;
     Vector3 dir, playerPos;
     // Start is called before the first frame update
     void Start()
@@ -17,6 +17,7 @@ public class EnemyMove : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        playerPos = player.transform.position;
         dir = playerPos - this.transform.position;
         rb.AddForce(dir*speed);
     }
