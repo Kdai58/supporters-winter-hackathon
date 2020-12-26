@@ -21,4 +21,13 @@ public class EnemyMove : MonoBehaviour
         dir = playerPos - this.transform.position;
         rb.AddForce(dir*speed);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.isTrigger == true)
+        {
+            Debug.Log("yay");
+            player.GetComponent<PlayerScript>().TakeDamage();
+        }
+    }
 }
