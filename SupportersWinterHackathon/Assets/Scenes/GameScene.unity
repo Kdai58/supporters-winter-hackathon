@@ -400,6 +400,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   virus: {fileID: 7293772375729314570, guid: 90fd058d8e54e4c3cb5e45a70b287325, type: 3}
+  xMin: 0
+  xMax: 0
+  yMin: 0
+  yMax: 0
+  zMin: 0
+  zMax: 0
+  gap: 1
+  numberOfEnemies: 10
 --- !u!1 &389536926
 GameObject:
   m_ObjectHideFlags: 0
