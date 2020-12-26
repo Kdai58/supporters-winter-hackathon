@@ -8,7 +8,7 @@ public class StartScript: MonoBehaviour {
         SceneManager.LoadScene("GameScene");
     }
     public void exit(){
-        UnityEditor.EditorApplication.isPlaying = false;
+        // UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
     }
 }
