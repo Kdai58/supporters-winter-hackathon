@@ -17,6 +17,7 @@ public class EnemyMove : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        playerPos = player.transform.position;
         dir = playerPos - this.transform.position;
         rb.AddForce(dir*speed);
     }
