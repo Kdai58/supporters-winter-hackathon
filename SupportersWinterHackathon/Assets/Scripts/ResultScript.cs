@@ -10,7 +10,7 @@ public class ResultScript : MonoBehaviour
     {
 
         if(PlayerScript.HP==100){
-            ResultText.text="評価:S　グゥゥゥレェィトゥ!!!!!\n"+
+            ResultText.text="評価:S　グゥゥゥレェィトゥ!!!\n"+
             "クリア時間:"+ TimeController.minute.ToString("00") + ":" + ((int) TimeController.seconds).ToString ("00");
         }else if(PlayerScript.HP>=50){
             ResultText.text="評価:A　よくできました。\n"+
