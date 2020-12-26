@@ -6,17 +6,19 @@ using UnityEngine.UI;
 
 public class PlayerScript : MonoBehaviour
 {
-    public int HP;
+    public float HP;
+    private float InitHP = 100;
+    private float RangeOfDamege = 0.1f;
     public GameObject HPtext;
     private Text UItext;
     void Start(){
-        HP = 10;
+        HP = InitHP;
         UItext = HPtext.GetComponent<Text>();
         UItext.text = "HP: " + HP.ToString();
     }
 
     public void TakeDamage(){
-        HP=HP-1;
+        HP -= InitHP * RangeOfDamege;
         UItext.text = "HP: " + HP.ToString();
         if (HP <= 0){
             Debug.Log("dead~");
