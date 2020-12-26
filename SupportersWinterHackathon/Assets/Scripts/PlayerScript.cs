@@ -6,7 +6,8 @@ using UnityEngine.UI;
 
 public class PlayerScript : MonoBehaviour
 {
-    public float HP;
+    
+    public static float HP;
     private float InitHP = 100;
     private float RangeOfDamege = 0.1f;
     public GameObject HPtext;
