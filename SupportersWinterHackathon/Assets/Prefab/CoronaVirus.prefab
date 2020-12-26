@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 7293772375729314613}
   - component: {fileID: 7293772375729314612}
   - component: {fileID: 7293772375729314571}
+  - component: {fileID: 8650059573533601012}
+  - component: {fileID: -547071896354105693}
   m_Layer: 0
   m_Name: CoronaVirus
   m_TagString: Untagged
@@ -95,3 +97,34 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8650059573533601012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7293772375729314570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e36628ee6e72684fb224873837e6034, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 8629142132977995840, guid: 6956d52158195c542b301acdefa1b9b4, type: 3}
+  rb: {fileID: -547071896354105693}
+  speed: 0.1
+--- !u!54 &-547071896354105693
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7293772375729314570}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
