@@ -8,4 +8,7 @@ public class ClearScript : MonoBehaviour
     public void BackToTitle(){
         SceneManager.LoadScene("TitleScene");
     }
+    public void retry(){
+        SceneManager.LoadScene("GameScene");
+    }
 }
