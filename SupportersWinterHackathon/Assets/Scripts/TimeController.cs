@@ -15,6 +15,7 @@ public class TimeController : MonoBehaviour
 		minute = 0;
 		seconds = 0f;
 		oldSeconds = 0f;
+		timerText.text = minute.ToString("00") + ":" + ((int) seconds).ToString ("00");
 	}
 
     // Update is called once per frame
