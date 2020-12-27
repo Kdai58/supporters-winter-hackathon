@@ -14,19 +14,20 @@ public class SpawnEnemiesController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        xMin = -10;
-        xMax = 11;
-        yMin = 0;
-        yMax = 11;
-        zMin = -10;
-        zMax = 10;
-        gap = 1;
-        numberOfEnemies = 5;
+        // xMin = -10;
+        // xMax = 11;
+        // yMin = 0;
+        // yMax = 11;
+        // zMin = -10;
+        // zMax = 10;
+        // gap = 1;
+        // numberOfEnemies = 5;
         StartCoroutine(StartSpawning());
     }
 
     IEnumerator StartSpawning() {
         Vector3 spawnPoints = new Vector3(Random.Range(xMin, xMax),Random.Range(yMin, yMax),Random.Range(zMin, zMax));
+        // Vector3 spawnPoints = new Vector3(0, 1, 1);
         Instantiate(virus, spawnPoints, Quaternion.identity);
 
         enemyObjects = GameObject.FindGameObjectsWithTag("Enemy");

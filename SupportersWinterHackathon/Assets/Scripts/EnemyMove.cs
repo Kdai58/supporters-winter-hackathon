@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class EnemyMove : MonoBehaviour
 {
-    public GameObject player;
+    private GameObject player;
     public Rigidbody rb;
     public float speed;
     Vector3 dir, playerPos;
