@@ -12,7 +12,7 @@ public class PlayerAttackController : MonoBehaviour
         RaycastHit hit;
 
         if(Physics.Raycast(arCamera.transform.position, arCamera.transform.forward, out hit)) {
-            if (hit.transform.name == "CoronaVirus(Clone)") {
+            if (hit.transform.name == "coronavirus 1(clone)") {
                 Destroy(hit.transform.gameObject);
 
                 // Instantiate(smoke, hit.point, Quaternion.LookRotation(hit.normal));

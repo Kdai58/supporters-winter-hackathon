@@ -5,7 +5,7 @@ public class EnemyMove : MonoBehaviour
 {
     public GameObject player;
     public Rigidbody rb;
-    public float speed = 0.00000001f;
+    public float speed;
     Vector3 dir, playerPos;
     // Start is called before the first frame update
     void Start()
@@ -19,14 +19,16 @@ public class EnemyMove : MonoBehaviour
     {
         playerPos = player.transform.position;
         dir = playerPos - this.transform.position;
-        if (dir.magnitude > 0.5) {
-            //rb.AddForce(dir * speed);
-            rb.velocity = dir * speed;
-            Debug.Log(rb.velocity.magnitude);
-        }else {
-            rb.velocity = dir * 0.0f;
-            Debug.Log(rb.velocity.magnitude);
-        }
+        Debug.Log(dir);
+        // if (dir.magnitude > 0.5) {
+        //     //rb.AddForce(dir * speed);
+        //     rb.velocity = dir * speed;
+        //     Debug.Log(rb.velocity.magnitude);
+        // }else {
+        //     rb.velocity = dir * 0.0f;
+        //     Debug.Log(rb.velocity.magnitude);
+        // }
+        rb.AddForce(dir * speed);
         
     }
 

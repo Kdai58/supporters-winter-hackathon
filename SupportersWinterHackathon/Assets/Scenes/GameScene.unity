@@ -399,7 +399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b03375f038e9846fa9c8fa8965ab997c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  virus: {fileID: 7293772375729314570, guid: 90fd058d8e54e4c3cb5e45a70b287325, type: 3}
+  virus: {fileID: 347670353268854883, guid: 66d35bf0f06974467b87a0d8d10c48cd, type: 3}
   xMin: 0
   xMax: 0
   yMin: 0
@@ -1212,5 +1212,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 235711fe2b176b04995b48b06e85ea9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 0
   HPtext: {fileID: 62898507}
